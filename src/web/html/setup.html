@@ -1011,7 +1011,7 @@
             function parsePinout(obj) {
                 var e = document.getElementById("pinout");
                 /*IF_ESP32*/
-                var pinList = esp32pins;
+                var pinList = esp32sXpins;
                 /*IF_ESP32-S2*/
                 pinList = esp32sXpins;
                 /*ENDIF_ESP32-S2*/
@@ -1055,7 +1055,7 @@
                 en.checked = obj["en"];
 
                 /*IF_ESP32*/
-                var pinList = esp32pins;
+                var pinList = esp32sXpins;
                 /*IF_ESP32-S2*/
                 pinList = esp32sXpins;
                 /*ENDIF_ESP32-S2*/
@@ -1097,7 +1097,7 @@
             function parseCmtRadio(obj) {
                 var e = document.getElementById("cmt");
                 var en = inp("cmtEnable", null, null, ["cb"], "cmtEnable", "checkbox");
-                var pinList = esp32pins;
+                var pinList = esp32sXpins;
                 /*IF_ESP32-S2*/
                 pinList = esp32sXpins;
                 /*ENDIF_ESP32-S2*/
@@ -1139,7 +1139,7 @@
             function parseEth(obj) {
                 var e = document.getElementById("eth");
                 var en = inp("ethEn", null, null, ["cb"], "ethEn", "checkbox");
-                var pinList = esp32pins;
+                var pinList = esp32sXpins;
                 /*IF_ESP32-S2*/
                 pinList = esp32sXpins;
                 /*ENDIF_ESP32-S2*/
@@ -1189,7 +1189,7 @@
             /*IF_PLUGIN_DISPLAY*/
             function parseDisplay(obj, type, system) {
                 /*IF_ESP32*/
-                var pinList = esp32pins;
+                var pinList = esp32sXpins;
                 /*IF_ESP32-S2*/
                 pinList = esp32sXpins;
                 /*ENDIF_ESP32-S2*/
