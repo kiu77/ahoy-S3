@@ -24,8 +24,11 @@ jobs:
     - name: Run PlatformIO
       run: pio run -d src -e opendtufusion-de
 
+    - name: Rename Firmware
+      run: python scripts/getVersion.py opendtufusion-de >> $GITHUB_OUTPUT
+
     - name: Create Artifact
       uses: actions/upload-artifact@v4
       with:
         name: opendtufusion-de
-        path: src/.pio/build/opendtufusion-de/firmware.bin
+        path: firmware/*
